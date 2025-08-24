@@ -1,0 +1,39 @@
+<!--  Icons of Temperature & Humidity  -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+<!-- Style of Temperature & Humidity -->
+<style>
+.sense {
+grid-column: 1/2;
+grid-row: 2/3;
+justify-self: center;
+display: grid;
+grid-template-rows: 1fr;
+justify-items: center;
+align-items: center;
+user-select:none;
+font-family: Arial;
+display: inline-block;
+margin: 0rem 0rem 6rem -5rem;
+text-align: center;
+}
+.fa-thermometer-half {
+font-size: 4.0rem; 
+}
+.fa-tint {
+font-size: 3.7rem;  
+}
+.sense p { font-size: 3.0rem; }
+.units { font-size: 1.8rem; }
+.dht-labels{
+font-size: 1.8rem;
+vertical-align:middle;
+padding-bottom: 15px;
+margin-left: 2rem;
+}
+#temperature, #humidity {
+font-size: 3.2rem;
+}
+#humidity-text {
+margin-right: 2rem;
+}
+</style>

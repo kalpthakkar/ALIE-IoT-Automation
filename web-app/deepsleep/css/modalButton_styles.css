@@ -1,0 +1,78 @@
+.modal-body span {
+	margin-left: 0.7rem;
+}
+.modal-body i {
+	font-size: 1.2rem;
+	margin-bottom: 0.8rem;
+}
+.modal-body button {
+	font-size: 0.9rem;
+	margin-left: 0.7rem;
+	display: inline-block;
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+	html {
+		font-size: 3rem;
+	}
+	#allButtons {
+		margin-top: 100%;
+	}
+	
+	.btn {
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		flex-flow: column wrap;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-end;
+	}
+	
+}
+@media (min-width: 768px) and (max-width: 980px){
+	.modal-content {
+		position: relative;
+	  z-index:1050;
+	  left:15%;
+	  margin-top: 6%;
+	  display: flex; 
+	  justify-content: center;
+	  width: 165%;
+	}
+}
+
+
+@media screen and (orientation: landscape) {
+  html {
+	font-size: 1.6rem;
+  }
+  #allButtons {
+	  margin-top: 40%;
+	display: flex;
+	position: relative;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	align-items: end;
+  }
+  .btn-primary {
+	  width: 11rem;
+	  margin-right: 3rem;
+	  margin-left: auto;
+  }
+  .btn-success {
+	  width: 11rem;
+	  margin-left: 3rem;
+	  margin-right: auto;
+	  
+  }
+  .modal-content {
+	  position: relative;
+	  z-index:1050;
+	  left:50%;
+	  margin-top: 6%;
+	  display: flex; 
+	  justify-content: center;
+	  width: 100%;
+  }
+}

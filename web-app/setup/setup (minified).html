@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='UTF-8'>
+  <title>Smart Home</title>
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/f0601b0fb2.js" crossorigin="anonymous"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style type="text/css">
+    :root{--primary-light:#8abdff;--primary:#6d5dfc;--primary-dark:#5b0eeb;--white:#FFFFFF;--greyLight-1:#E4EBF5;--greyLight-2:#c8d0e7;--greyLight-3:#bec8e4;--greyDark:#9baacf}*,::after,::before{margin:0;padding:0;box-sizing:inherit}html{box-sizing:border-box;font-size:62.5%;overflow-y:scroll;background:var(--greyLight-1)}.container{min-height:76vh;display:flex;justify-content:center;align-items:center;font-family:Poppins,sans-serif;background:var(--greyLight-1)}.alert{width:80%;padding:20px;margin-top:2.5rem;margin-bottom:0;background-image:linear-gradient(to right,#7b4397,#a1338a,#c01d73,#d40d55,#dc2430);color:#fff;border-radius:9px}.closebtn{margin-left:15px;color:#fff;font-weight:700;float:right;font-size:22px;line-height:20px;cursor:pointer;transition:.3s}.closebtn:hover{color:#000}#error_list p{margin-top:.6rem;font-family:Verdana,sans-serif}@media screen and (min-width:600px){html{font-size:85%;margin-top:4rem;margin-bottom:4rem}.container{min-height:90vh}.alert{width:50%;margin-top:0;margin-bottom:2.5rem}}.components{width:28.5rem;height:50.6rem;border-radius:3rem;box-shadow:.8rem .8rem 1.4rem var(--greyLight-2),-.2rem -.2rem 1.8rem var(--white);padding:4rem;display:grid;grid-template-columns:17.6rem 19rem 20.4rem;grid-template-rows:repeat(autofit,-webkit-min-content);grid-template-rows:repeat(autofit,min-content);grid-column-gap:0;grid-row-gap:2.5rem;align-items:center}form{grid-column:1/1;grid-row:2/3;margin-top:-3rem}.inputIcon{position:relative;display:flex;align-items:center;width:25.4rem}.inputIcon__input{width:20.4rem;height:4rem;border:none;border-radius:1rem;font-size:1.4rem;padding-left:3.8rem;box-shadow:inset .2rem .2rem .5rem var(--greyLight-2),inset -.2rem -.2rem .5rem var(--white);background:0 0;font-family:inherit;color:var(--greyDark)}.inputIcon__input::-moz-placeholder{color:var(--greyLight-3)}.inputIcon__input:-ms-input-placeholder{color:var(--greyLight-3)}.inputIcon__input::placeholder{color:var(--greyLight-3)}.inputIcon__input:focus{outline:0;box-shadow:.3rem .3rem .6rem var(--greyLight-2),-.2rem -.2rem .5rem var(--white)}.inputIcon__input:focus+.inputIcon__icon{color:var(--primary)}.inputIcon__icon{height:2rem;position:absolute;font-size:2rem;padding:0 1rem;display:flex;color:var(--greyDark);transition:.3s ease}.radio{display:grid;grid-template-columns:repeat(2,10.4em);justify-items:center}.radio input{display:none}.radio__1 input:checked~label,.radio__2 input:checked~label{box-shadow:inset .2rem .2rem .5rem var(--greyLight-2),inset -.2rem -.2rem .5rem var(--white)}.radio__1 input:checked~label::after,.radio__2 input:checked~label::after{background:var(--primary)}.radio__1 label,.radio__2 label{box-shadow:.3rem .3rem .6rem var(--greyLight-2),-.2rem -.2rem .5rem var(--white);position:relative;display:flex;justify-content:center;align-items:center;cursor:pointer;width:2.8rem;height:2.8rem;border-radius:50%}.radio__1 label:hover::after,.radio__2 label:hover::after{background:var(--primary)}.radio__1 label::after,.radio__2 label::after{content:"";position:absolute;width:1.4rem;height:1.4rem;background:var(--greyDark);border-radius:50%;transition:.3s ease}.btn{width:15rem;height:4rem;font-size:1.6rem;border-radius:9rem;box-shadow:.3rem .3rem .6rem var(--greyLight-2),-.2rem -.2rem .5rem var(--white);position:relative;justify-self:center;display:flex;align-items:center;justify-content:center;cursor:pointer;transition:.3s ease;border:none;margin-left:3rem}.btn__primary{background:var(--primary);box-shadow:inset .2rem .2rem 1rem var(--primary-light),inset -.2rem -.2rem 1rem var(--primary-dark),.3rem .3rem .6rem var(--greyLight-2),-.2rem -.2rem .5rem var(--white);color:var(--greyLight-1)}.btn__primary:hover{color:var(--white)}.btn__primary:active{box-shadow:inset .2rem .2rem 1rem var(--primary-dark),inset -.2rem -.2rem 1rem var(--primary-light)}.btn__info{margin:1rem 0 0 .3rem;padding:0 1rem;height:3.3rem;width:20rem;pointer-events:none;background:#24f024;box-shadow:inset .2rem .2rem 1rem #94ff94,inset -.2rem -.2rem 1rem #00ad00,.3rem .3rem .6rem var(--greyLight-2),-.2rem -.2rem .5rem var(--white);color:#fff}.btn__info:hover{color:#fff}.btn__info:active{box-shadow:inset .2rem .2rem 1rem #008011,inset -.2rem -.2rem 1rem #a3ffaf}.btn__info p{font-weight:600;font-size:1.2rem;padding-left:1rem}select{-webkit-appearance:none;-moz-appearance:none;appearance:none}.inputIcon__icon svg{margin-top:.15rem;width:1.8rem;height:1.8rem}
+  </style>
+  <script type="text/javascript">
+var create_portal=!0;function toggleField(e,t){e.disabled=!0,e.style.display="none",t.disabled=!1,t.style.display="inline",t.focus(),t.setAttribute("style","width: 20.4rem;height: 4rem;border: none;border-radius: 1rem;font-size: 1.4rem;padding-left: 3.8rem;box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);background: none;font-family: inherit;color: var(--greyDark);outline: none;")}function showPortal(){document.getElementById("portal").style.display="block",document.getElementById("component").setAttribute("style","height: 50.6rem;"),document.getElementById("input_username").attributes.required="required",document.getElementById("input_password").attributes.required="required",create_portal=!0}function hidePortal(){document.getElementById("portal").style.display="none",document.getElementById("component").setAttribute("style","height: 40.6rem;"),document.getElementById("input_username").attributes.required="",document.getElementById("input_password").attributes.required="",create_portal=!1}function validateForm(){var e=0,t=document.getElementById("error_list");if(t.innerHTML="",document.getElementById("select_custom_ssid").value.length>32&&(t.innerHTML+="<p>Invalid Network Name</p>",e+=1),(n=document.forms.setup.networkPassword.value).length>64&&(t.innerHTML+="<p>Invalid Network Password</p>",e+=1),create_portal&&"none"!=document.getElementById("portal").style.display){var n,r=document.forms.setup.deviceUsername.value;r.length<3&&(t.innerHTML+="<p>Username must be greater that 2 characters</p>",e+=1),r.length>20&&(t.innerHTML+="<p>Username must be less than 20 letters</p>",e+=1),r.includes(" ")&&(t.innerHTML+="<p>Username cannot contain spaces</p>",e+=1),(n=document.forms.setup.devicePassword.value).length<4&&(t.innerHTML+="<p>Account password must be at least 4 characters long</p>",e+=1),n.length>30&&(t.innerHTML+="<p>Account password must max contain 30 letters</p>",e+=1),n.includes(" ")&&(t.innerHTML+="<p>Account password cannot contain spaces</p>",e+=1)}return document.getElementById("select_custom_location").value.length>13&&(t.innerHTML+="<p>Location must be named within 13 characters</p>",e+=1),document.getElementById("select_location").value.includes("default")&&document.getElementById("select_custom_location").disabled&&(t.innerHTML+="<p>Select this device location where it has been setup</p>",e+=1),0==e||(document.getElementById("display_errors").style.display="block",!1)}window.onload=function(){document.getElementById("display_errors").style.display="none"};
+  </script>
+</head>
+<body>
+<center>
+<div class="alert" id="display_errors">
+
+  <span class="closebtn" onclick="this.parentElement.style.display='none'; ">&times;</span> 
+  <h3><strong>Errors!</strong></h3>
+  <div id="error_list">
+      
+  </div>
+  
+</div>
+</center>
+<div class="container">
+    <div class="components" id="component">
+        <form name="setup" method='POST' action="/setup" onsubmit="return validateForm()">
+          
+            <div class="inputIcon">
+                <select class="inputIcon__input" name="networkName" onchange="if(this.options[this.selectedIndex].value=='customSSID'){toggleField(this,this.nextSibling); this.selectedIndex='0';}" required>
+                    <option value="0">Kalp</option>
+                    <option value="1">Sweet Home</option>
+                    <option value="3">Virag</option>
+                    <option value="customSSID">Custom</option>
+                </select><input name="networkName" style="display:none;" id="select_custom_ssid" disabled="disabled" onblur="if(this.value==''){toggleField(this,this.previousSibling);}">
+                <div class="inputIcon__icon" >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-rss-fill" viewBox="0 0 16 16">
+                    <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm1.5 2.5c5.523 0 10 4.477 10 10a1 1 0 1 1-2 0 8 8 0 0 0-8-8 1 1 0 0 1 0-2zm0 4a6 6 0 0 1 6 6 1 1 0 1 1-2 0 4 4 0 0 0-4-4 1 1 0 0 1 0-2zm.5 7a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                    </svg>
+                </div>
+            </div>
+            <br>
+            <div class="inputIcon">
+                <input name="networkPassword" type="password" class="inputIcon__input" placeholder="WiFi password" required>
+                <div class="inputIcon__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-shield-lock-fill" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M8 0c-.69 0-1.843.265-2.928.56-1.11.3-2.229.655-2.887.87a1.54 1.54 0 0 0-1.044 1.262c-.596 4.477.787 7.795 2.465 9.99a11.777 11.777 0 0 0 2.517 2.453c.386.273.744.482 1.048.625.28.132.581.24.829.24s.548-.108.829-.24a7.159 7.159 0 0 0 1.048-.625 11.775 11.775 0 0 0 2.517-2.453c1.678-2.195 3.061-5.513 2.465-9.99a1.541 1.541 0 0 0-1.044-1.263 62.467 62.467 0 0 0-2.887-.87C9.843.266 8.69 0 8 0zm0 5a1.5 1.5 0 0 1 .5 2.915l.385 1.99a.5.5 0 0 1-.491.595h-.788a.5.5 0 0 1-.49-.595l.384-1.99A1.5 1.5 0 0 1 8 5z"/>
+                    </svg>
+                </div>
+            </div>
+            
+            
+            <br>
+            
+            <div class="btn btn__info">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" width="23" height="23" fill="currentColor" class="bi bi-layers-fill" viewBox="0 0 16 16">
+  <path d="M7.765 1.559a.5.5 0 0 1 .47 0l7.5 4a.5.5 0 0 1 0 .882l-7.5 4a.5.5 0 0 1-.47 0l-7.5-4a.5.5 0 0 1 0-.882l7.5-4z"/>
+  <path d="m2.125 8.567-1.86.992a.5.5 0 0 0 0 .882l7.5 4a.5.5 0 0 0 .47 0l7.5-4a.5.5 0 0 0 0-.882l-1.86-.992-5.17 2.756a1.5 1.5 0 0 1-1.41 0l-5.17-2.756z"/>
+</svg>
+      <p>Create Login Portal ?</p>
+      </div>
+            
+            <br>
+            <div class="radio">
+                <div class="radio__1">
+                    <input id="radio-1" type="radio"  name="radio" value="1" checked="checked" onchange="showPortal()">
+                    <label for="radio-1"></label>
+                </div>
+            
+                <div class="radio__2">
+                    <input id="radio-2" type="radio" name="radio" value="0" onchange="hidePortal(this.value)">
+                    <label for="radio-2"></label>
+                </div>
+            </div>
+            <br>
+            <div id="portal">
+            <div class="inputIcon">
+                <input name="deviceUsername" type="text" id="input_username" class="inputIcon__input" placeholder="Set Username">
+                <div class="inputIcon__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 2rem; height: 2rem; margin-top: 0.10rem; margin-left: 0.05rem;" fill="currentColor" class="bi bi-person-fill" viewBox="0 0 16 16">
+                    <path d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                    </svg>
+                </div>
+            </div>
+            <br>
+            <div class="inputIcon">
+                <input name="devicePassword" type="password" id="input_password" class="inputIcon__input" placeholder="Set Password">
+                <div class="inputIcon__icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" style="width: 2rem; margin-left: 0.15rem;" fill="currentColor" class="bi bi-unlock-fill" viewBox="0 0 16 16">
+                    <path d="M11 1a2 2 0 0 0-2 2v4a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2h5V3a3 3 0 0 1 6 0v4a.5.5 0 0 1-1 0V3a2 2 0 0 0-2-2z"/>
+                    </svg>
+                </div>
+            </div>
+            </div>
+            <br>
+          
+            <div class="inputIcon">
+                <select class="inputIcon__input" name="deviceLocation" onchange="if(this.options[this.selectedIndex].value=='customOption'){toggleField(this,this.nextSibling); this.selectedIndex='0';}" id="select_location" required>
+                    <option value="default" disabled="disabled" selected>Select Room</option>
+                    <option value="Bedroom">Bedroom</option>
+                    <option value="Dining">Dining</option>
+                    <option value="Drawing Room">Drawing Room</option>
+                    <option value="Garden">Garden</option>
+                    <option value="Garrage">Garrage</option>
+                    <option value="Hall">Hall</option>
+                    <option value="Kitchen">Kitchen</option>
+                    <option value="Living Room">Living Room</option>
+                    <option value="Lobby">Lobby</option>
+                    <option value="Outdoor">Outdoor</option>
+                    <option value="Parking">Parking</option>
+                    
+                    <option value="customOption">Custom Name</option>
+                </select><input name="deviceLocation" style="display:none;" id="select_custom_location" disabled="disabled" onblur="if(this.value==''){toggleField(this,this.previousSibling);}">
+                <div class="inputIcon__icon" >
+                    <svg xmlns="http://www.w3.org/2000/svg" style="margin-top: 0.10rem; margin-left: 0.05rem;" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                    </svg>
+                </div>
+            </div>
+            <br>
+            <br>
+            <input type="submit" value="Confirm" class="btn btn__primary">
+        </form>
+    </div>
+</div>
+</body>
+</html>

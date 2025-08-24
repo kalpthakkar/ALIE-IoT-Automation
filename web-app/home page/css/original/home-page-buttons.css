@@ -1,0 +1,47 @@
+/* Deepsleep & Location buttons */
+
+.btn {
+  width: 15rem;
+  height: 4rem;
+  border-radius: 1rem;
+  box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: 0.3s ease;
+  user-select:none;
+}
+.btn__primary {
+  grid-column: 1/2;
+  grid-row: 3/4;
+  margin-right: 0rem;
+  background: var(--primary);
+  box-shadow: inset 0.2rem 0.2rem 1rem var(--primary-light), inset -0.2rem -0.2rem 1rem var(--primary-dark), 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+  color: var(--greyLight-1);
+}
+.btn__primary:hover {
+  color: var(--white);
+}
+.btn__primary:active {
+  box-shadow: inset 0.2rem 0.2rem 1rem var(--primary-dark), inset -0.2rem -0.2rem 1rem var(--primary-light);
+}
+.btn__secondary {
+  grid-column: 1 / 2;
+  grid-row: 4 / 5;
+  color: var(--greyDark);
+  margin-top: 1.9rem;
+
+    cursor: url("https://i.ibb.co/rZHNdTW/Smart-Room-Location.png"), auto;
+}
+
+.btn__secondary:hover {
+}
+.btn__secondary:active {
+  box-shadow: $inner-shadow;
+}
+
+.btn p {
+  font-size: 1.6rem;
+}
