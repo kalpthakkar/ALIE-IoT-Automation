@@ -1,10 +1,10 @@
-# ALIE: Artificially Linked Intelligent Entity
+# 🚀 ALIE: Artificially Linked Intelligent Entity
 
 ![ALIE High-Level Architecture](images/architecture/high-level%20architecture.png)
 
 ---
 
-## Table of Contents
+## 📖 Table of Contents
 
 - [Overview](#overview)
 - [Introduction](#introduction)
@@ -29,19 +29,19 @@
 
 ---
 
-## Overview
+## 💡 Overview
 
 **ALIE** (Artificially Linked Intelligent Entity) is a full-stack, production-grade IoT automation platform designed for real-time, secure, and intelligent control of smart environments. Unlike typical DIY projects, ALIE is engineered as a robust product, blending advanced embedded systems, cloud integration, and immersive user interfaces to deliver seamless, multi-modal control and monitoring.
 
 ---
 
-## Introduction
+## 📝 Introduction
 
 ALIE is a next-generation smart automation system built on the ESP32 platform, leveraging FreeRTOS, MQTT, and end-to-end encryption. It supports voice, touch, web, mobile, and even BCI (Brain-Computer Interface) controls, with real-time cloud synchronization and OTA updates. The system is designed for reliability, extensibility, and immersive user experience, making it suitable for both home and industrial automation.
 
 ---
 
-## What Sets ALIE Apart
+## 🏆 What Sets ALIE Apart
 
 - **Product-Grade Engineering:** Not just a project, but a scalable, maintainable, and customizable product.
 - **Multi-Modal Control:** Voice (Alexa/Google Home), NFC/RFID, touch, web, mobile, and BCI.
@@ -53,7 +53,7 @@ ALIE is a next-generation smart automation system built on the ESP32 platform, l
 
 ---
 
-## Features & Capabilities
+## ✨ Features & Capabilities
 
 - Real-time embedded control with FreeRTOS and MQTT
 - End-to-end encrypted communication
@@ -73,7 +73,7 @@ ALIE is a next-generation smart automation system built on the ESP32 platform, l
 
 ---
 
-## System Architecture & Technologies Used
+## 🛠️ System Architecture & Technologies Used
 
 ### Hardware
 
@@ -126,7 +126,7 @@ ALIE is a next-generation smart automation system built on the ESP32 platform, l
 
 ---
 
-## How It Works
+## ⚙️ How It Works
 
 1. **Device boots up** and connects to WiFi (ad-hoc or WAN).
 2. **Sensors and relays** are initialized; FreeRTOS tasks manage device logic.
@@ -138,7 +138,7 @@ ALIE is a next-generation smart automation system built on the ESP32 platform, l
 
 ---
 
-## Workflow
+## 🧩 Workflow
 
 1. **Setup:** Device is configured via web/mobile interface or NFC.
 2. **Control:** User can control appliances, monitor sensors, and schedule tasks.
@@ -149,7 +149,7 @@ ALIE is a next-generation smart automation system built on the ESP32 platform, l
 
 ---
 
-## Setup & Installation
+## 📦 Setup & Installation
 
 ### Hardware
 
@@ -179,7 +179,7 @@ ALIE is a next-generation smart automation system built on the ESP32 platform, l
 
 ---
 
-## Usage
+## 📚 Usage
 
 - **Web Interface:** Access the 3D dashboard, control devices, and monitor status at `http://<device_ip>`.
 - **Mobile App:** Use the Blynk app to control devices and receive notifications.
@@ -188,7 +188,7 @@ ALIE is a next-generation smart automation system built on the ESP32 platform, l
 
 ---
 
-## Deployment & Testing
+## 🧪 Deployment & Testing
 
 - For production, use a reliable power source and consider a UPS for backup.
 - Test all functionalities, including OTA updates, cloud sync, and automation.
@@ -196,7 +196,7 @@ ALIE is a next-generation smart automation system built on the ESP32 platform, l
 
 ---
 
-## Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Please follow these steps:
 
@@ -208,16 +208,17 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-## Contact
+## 📞 Contact
 
-For questions or support, please contact:
+For any inquiries or support, please contact:
 
-- **Email:** kalpthakkar2001@gmail.com
-- **GitHub Issues:** https://github.com/kalpthakkar/ALIE-IoT-Automation/issues
+- **Kalp Thakkar** - [kalpthakkar2001@gmail.com](mailto:kalpthakkar2001@gmail.com)
+- **GitHub**: [kalpthakkar](https://github.com/kalpthakkar)
+- **LinkedIn**: [kalpthakkar](https://linkedin.com/in/kalpthhakkar)
 
 ---
 
-## Roadmap
+## 📅 Roadmap
 
 Planned features and improvements:
 
@@ -234,7 +235,7 @@ Planned features and improvements:
 
 ---
 
-## FAQ
+## ❓ FAQ
 
 **Q1: What is ALIE?**
 A1: ALIE is a full-stack IoT automation platform for smart environments, offering real-time control and monitoring.
